@@ -1,3 +1,435 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+    margin: 10px 30px 10px 30px;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
 
 
+/*my code began here*/
+
+h2 {
+  font-family: "Anton", sans-serif;
+}
+
+.services-container {
+  margin: auto;
+  width: 880px;
+}
+
+.static-navbar {
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  /* background-color: rgb(0, 93, 189); */
+  z-index: 5;
+  display: flex;
+  /*display: block;*/
+  width: 880px;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.links {
+  margin: 0.7% 0.7% 0% 0%;
+}
+
+nav.links a {
+  color: grey;
+}
+
+nav {
+  display: flex;
+  /*display: block;*/
+  width: 880px;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+}
+/*
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}*/
+
+@media (max-width: 800px) {
+  .static-navbar {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .static-navbar {
+    border-bottom: 1px solid grey;
+    margin-top: 10px;
+
+  }
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 35px 31px 0 31px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-evenly;
+  /*display: inline-block;*/
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+nav a:hover {
+  color: rgb(176, 177, 178);
+}
+
+nav a:first-child {
+  margin-left: 0;
+}
+
+nav div {
+  display: flex;
+  /*display: inline-block;*/
+  position: absolute;
+  right: 0;
+}
+
+
+img.logo {
+  margin-top: 21px;
+}
+
+.website-wrapper {
+  width: 880px;
+  margin: 0px auto 0 auto;
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .website-wrapper {
+    width: 100%;
+  }
+}
+
+header {
+  border-bottom: 1px solid black;
+  /* height: 490px;*/
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  header {
+    max-width: 95%;
+    border-bottom: 1px solid black;
+    padding-bottom: 75px;
+  }
+}
+
+header div {
+  display: flex;
+  /*display: inline-block;*/
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header div h1 {
+  font-size: 80px;
+  margin-bottom: 30px;
+  text-align: center;
+  /*  justify-content: center;
+  align-items: baseline;*/
+}
+
+@media (max-width: 800px) {
+  header div h1 {
+    font-size: 70px;
+    margin: 85px 0px 25px 0px;
+    line-height: 105%;
+  }
+}
+
+header div h1 span {
+  display: block;
+}
+
+header div a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 7px 46px;
+  justify-content: center;
+}
+
+header img {
+  right: 0;
+}
+
+@media (max-width: 800px) {
+  header img {
+    display: none;
+  }
+}
+
+.services-header {
+  display: block;
+  line-height: 130%;
+}
+
+.services-header h1 {
+  margin-top: 30px;
+  font-size: 155%;
+}
+
+@media (max-width: 800px) {
+  .section-home {
+    width: 95%;
+    margin: 0px 10px;
+  }
+}
+
+.section-one {
+  margin-top: 39px;
+  display: flex;
+}
+
+.section-one div {
+  width: 430px;
+  height: 100px;
+  display: flex;
+  align-content: flex-start; /*not needed*/
+  flex-direction: column;
+}
+
+.section-one div p {
+  line-height: 1.16;
+}
+
+.section-one div:first-child {
+  margin-right: 10px;
+}
+
+.services-one {
+  margin-top: 39px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+  /*justify-content: space-around;*/
+}
+
+.services-one h3 {
+  margin-bottom: 16px;
+}
+.services-one div {
+  width: 47.7%;
+  display: block;
+  align-content: flex-start; /*not needed*/
+  background-color: rgb(241, 241, 241);
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 40px;
+  line-height: 125%;
+}
+
+button {
+  width: 140px;
+  height: 35px;
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.middle-img {
+  margin-top: 38px;
+}
+
+@media (max-width: 800px) {
+  .middle-img {
+    width: 95%;
+  }
+}
+
+.section-two {
+  border-bottom: 1px solid black;
+  margin-top: 36px;
+  padding-bottom: 47px;
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .section-two {
+    padding-bottom: 37px;
+  }
+}
+
+.section-two div {
+  display: flex;
+  width: 280px;
+  margin-right: 10px;
+  flex-direction: column;
+  align-content: flex-start; /*not needed*/
+}
+
+.section-two div p {
+  line-height: 1.16;
+}
+
+@media (max-width: 800px) {
+  .section-two div p {
+    width: 80%;
+  }
+}
+
+address {
+  margin-top: 38px;
+}
+
+@media (max-width: 800px) {
+  address {
+    width: 95%;
+    margin: 35px 10px 0px 10px;
+  }
+}
+
+address div {
+  line-height: 1.16;
+}
+
+address div span {
+  display: flex;
+  margin: 17px 0 18px 0;
+}
+
+@media (max-width: 800px) {
+  address div span {
+    margin: 12px 0px -5px 0px;
+  }
+}
+
+summary {
+  display: flex;
+  margin-top: 40px;
+}
+
+.services-summary p {
+  line-height: 126%;
+  margin: 18px 50px 20px 0px;
+}
+
+.services-summary img {
+  margin-top: 0px;
+}
+
+ul {
+  line-height: 190%;
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+li {
+  padding-left: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 183px;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 90px;
+  font-size: 16px;
+}
