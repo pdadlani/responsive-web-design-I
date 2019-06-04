@@ -139,16 +139,6 @@ nav {
   }
 }
 
-nav a {
-  text-decoration: none;
-  color: black;
-  margin: 35px 31px 0 31px;
-  font-size: 14px;
-  align-items: center;
-  justify-content: space-evenly;
-  /*display: inline-block;*/
-}
-
 @media (max-width: 800px) {
   nav {
     display: flex;
@@ -164,12 +154,39 @@ nav a {
   }
 }
 
+nav a {
+  text-decoration: none;
+  color: grey;
+  margin: 35px 31px 0 31px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-evenly;
+  /*display: inline-block;*/
+}
+
 nav a:hover {
-  color: rgb(176, 177, 178);
+  color: rgb(221, 29, 141);
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 nav a:first-child {
   margin-left: 0;
+}
+
+@media (max-width: 500px) {
+  nav a {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+  }
+}
+
+@media (max-width: 500px) {
+  nav a:hover {
+    background: lightskyblue;
+  }
 }
 
 nav div {
@@ -270,9 +287,26 @@ header img {
   font-size: 155%;
 }
 
+.section-home {
+  display: flex;
+  margin: 25px 0px;
+}
+
 @media (max-width: 800px) {
   .section-home {
     width: 95%;
+    margin: 0px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-home {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-home div {
     margin: 0px 10px;
   }
 }
@@ -282,8 +316,14 @@ header img {
   display: flex;
 }
 
+@media (max-width: 500px) {
+  .section-one {
+    justify-content: space-around;
+    height: 300px;
+  }
+}
+
 .section-one div {
-  width: 430px;
   height: 100px;
   display: flex;
   align-content: flex-start; /*not needed*/
@@ -355,9 +395,15 @@ button {
   }
 }
 
+@media (max-width: 500px) {
+  .section-two {
+      align-content: space-between;
+      height: 450px;
+  }
+}
+
 .section-two div {
   display: flex;
-  width: 280px;
   margin-right: 10px;
   flex-direction: column;
   align-content: flex-start; /*not needed*/
@@ -432,4 +478,10 @@ footer {
 footer p {
   margin-top: 90px;
   font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  footer p {
+    margin-top: 39px;
+  }
 }
