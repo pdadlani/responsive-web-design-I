@@ -133,9 +133,18 @@ nav {
 
 @media (max-width: 500px) {
   .static-navbar {
-    border-bottom: 1px solid grey;
     margin-top: 10px;
+    height: 500px;
+  }
+}
 
+@media (max-width: 500px) {
+  .main-nav-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: center;
   }
 }
 
@@ -151,6 +160,7 @@ nav {
   nav {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
   }
 }
 
@@ -177,9 +187,10 @@ nav a:first-child {
 @media (max-width: 500px) {
   nav a {
     width: 100%;
-    padding: 15px;
+    padding: 30px;
     text-align: center;
     border-bottom: 1px solid grey;
+    margin: 0 auto; 
   }
 }
 
@@ -196,6 +207,17 @@ nav div {
   right: 0;
 }
 
+@media (max-width: 800px) {
+  nav div {
+    order: -1;
+  }
+}
+
+@media (max-width: 500px) {
+  nav  {
+    position: relative;
+  }
+}
 
 img.logo {
   margin-top: 21px;
@@ -295,13 +317,14 @@ header img {
 @media (max-width: 800px) {
   .section-home {
     width: 95%;
-    margin: 0px 10px;
+    margin: 0px 10px 10px;
   }
 }
 
 @media (max-width: 500px) {
   .section-home {
     flex-direction: column;
+    height: max-content;
   }
 }
 
@@ -319,7 +342,9 @@ header img {
 @media (max-width: 500px) {
   .section-one {
     justify-content: space-around;
-    height: 300px;
+    height: max-content;
+    margin-bottom: 20px;
+
   }
 }
 
